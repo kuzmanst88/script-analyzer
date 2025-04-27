@@ -47,9 +47,6 @@ function csh_print_script_handles() {
                 if (src) { // External scripts
                     if (src.includes("wp-admin") || src.includes("wp-includes")) {
                         // label = " (WordPress)"; // removing this for now because the WP core handles have their own tab
-=======
-                        // label = " (WordPress)"; // removing this for now because the WP цоре handles have their own tab
->>>>>>> origin/main
                         wpScripts.push(`${displayText}${label} - ${src}`);
                     } else if (src.includes("wp-content/plugins/")) {
                         let match = src.match(/wp-content\/plugins\/([^\/]+)/);
@@ -68,8 +65,6 @@ function csh_print_script_handles() {
                 } else { // Inline script
                     let content = script.textContent.trim().replace(/\s+/g, " "); // Remove extra spaces
                     let preview = content.length > 150 ? content.substring(0, 150) + "..." : content;
-=======
-                    let preview = content.length > 100 ? content.substring(0, 100) + "..." : content;
                     inlineScripts.push(`(Inline Script)\n  ${preview}`);
                 }
             });
