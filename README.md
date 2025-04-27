@@ -31,5 +31,3 @@ Once activated, the plugin will:
 1. Add a `script-handle` attribute to all enqueued scripts.
 2. Log the script handles to the browser console in categorized groups (WordPress core, plugins, themes, inline, and others).
 3. Provide a console output of all handles categorized for easier script management and debugging.
-
-### Example Console Output
