@@ -22,16 +22,6 @@ if (!defined('ABSPATH')) {
 //     );
 // }
 
-=======
- * Plugin Name: Custom Script Handle
- * Description: Adds script-handle attribute to all enqueued scripts, logs all handles in the browser console, and categorizes them by type.
- * Version: 2.2
- * Author: Your Name
- */
-
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly.
-}
 
 // Add script-handle attribute to all enqueued scripts
 add_filter('script_loader_tag', 'csh_add_script_handle', 10, 3);
